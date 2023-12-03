@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send_Mail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="form-main">
+        <div class="main-wrapper">
+          <h2 class="form-head">Formulario de contacto</h2>
+          <form class="form-wrapper" action="https://formsubmit.co/4dd0b8acdc6fd771b0ad493bd9968ade" method="POST">
+            <!-- or <form class="form-wrapper" action="https://formsubmit.co/valcourtcarl77@gmail.com" method="POST"> -->
+            <div class="form-card">
+              <input class="form-input" type="text" name="name" required="required" />
+              <label class="form-label" for="name">Nombre Completo</label>
+            </div>
+  
+            <div class="form-card">
+              <input
+                class="form-input" type="email" name="email" required="required" />
+              <label class="form-label" for="email">Correo</label>
+            </div>
+  
+            <div class="form-card">
+              <input class="form-input" type="text" name="Subject" required="required" />
+              <label class="form-label" for="Subject">Asunto</label>
+            </div>
+  
+            <div class="form-card">
+              <textarea class="form-textarea" maxlength="420" rows="3" name="comments" required="required"></textarea>
+              <label class="form-textarea-label" for="phone_number">Comentarios</label>
+            </div>
+            <div class="btn-wrap">
+                <input type="submit" class="btn btn-primary" value="Enviar">
+              <!--<button> Submit </button>-->
+                <input type="hidden" name="_next" value="http://127.0.0.1:5502/index.html">
+                <input type="hidden" name="_captcha" id="" value="false">
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
